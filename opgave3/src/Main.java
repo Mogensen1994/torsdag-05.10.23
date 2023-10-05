@@ -10,7 +10,7 @@ public class Main {
         roomList.add(room1);
         roomList.add(room2);
         roomList.add(room3);
-        Building building = new Building(roomList, 2, 3, false);
+        Building building = new Building(roomList, 3, 4, true);
 
         int totalLamps = countLampsInBuilding(building);
         System.out.println("Total number of lamps in the building: " + totalLamps);
@@ -41,7 +41,6 @@ public class Main {
         if (numberOfFloors > numberOfRooms) {
             return true;
         } else {
-            System.out.println("This is an odd building.");
             return false;
         }
     }
